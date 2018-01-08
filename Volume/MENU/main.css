@@ -1,0 +1,252 @@
+@import "compass/css3";
+
+/*LOAD THEM FONTS Y'ALL*/
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGrotesk.ttf);
+    }
+div {
+    font-family:AktivGrotesk;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBoldItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+      font-family: AktivGrotesk;
+      src: url(fonts/AktivGroteskItalic.ttf);
+      font-weight: 300;
+      font-style: italic;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*--------------------*/
+
+/*MENU FLEX CONTAINER*/
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top:100px;
+}
+
+.overview {
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+
+  flex: 1 100%;
+}
+
+.header {
+  background: black;
+}
+
+.footer {
+  background: black;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+/*NAVIGATION OVERLAY*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    padding-top: 0px;
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* white fallback color */
+    background-color: white; /* White */
+    overflow-y: hidden; /* Disable vertical scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*----<<<< body starts here >>>-----*/
+body {
+  background-image: url("img/textured_paper2.jpg");
+  background-repeat: repeat;
+}
+
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+.navigation a {
+  text-decoration: none;
+  font-weight: 100;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation li {
+  text-align:left;
+}
+
+#tagline {
+  font-weight:100;
+  font-style: italic;
+
+}
+.navigation a:hover {
+  background: black;
+}
+
+#issue {
+  font-size:24px;
+  font-weight:700;
+  padding-right: 2em;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-between;
+  }
+}
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+
+  }
+}

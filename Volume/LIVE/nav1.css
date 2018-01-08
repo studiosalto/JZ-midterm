@@ -1,0 +1,419 @@
+/*@import "compass/css3";*/
+
+body {
+  background-image: url("img/textured_paper2.jpg");
+  background-repeat: repeat;
+}
+
+
+
+/*LOAD THEM FONTS Y'ALL*/
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGrotesk.ttf);
+    }
+div {
+    font-family:AktivGrotesk;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBoldItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+#issue span {
+    color:orange;
+}
+
+/*--------------------*/
+
+/*FLEX CONTAINER*/
+
+/* Common Styles */
+
+.menu {
+  background-color: white;
+  width:238px;
+  height:50px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  text-align:left;
+  padding-top:15px;
+  padding-left:10px;
+}
+
+#drop {
+  position: absolute;
+  top:19px;
+}
+
+#x {
+  position: absolute;
+  top:14px;
+  text-align:left;
+}
+
+#nr {
+  text-color:orange;
+}
+
+.menu a {
+  font-size:36px;
+  font-weight:700;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding:4px;
+  color:black;
+}
+
+.menu a:hover {
+  text-color:orange;
+  cursor: pointer;
+}
+
+.content {
+    font-family: AktivGrotesk, sans-serif;
+    margin-top:100px;
+    font-color: black;
+    height: 150px;
+    text-align: left;
+    margin-bottom:100px;
+}
+
+.content a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.content .active {
+  border: 5px solid orange;
+}
+
+.content div {
+    height: 150px;
+    width: 32%;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background: white;
+    border:5px solid white;
+}
+
+#title {
+  padding-left:10px;
+  font-size:24px;
+  font-weight:800;
+  width:40%;
+}
+
+#pubdate {
+    padding-left:10px;
+    font-size:14px;
+    /*line-height:3px;*/
+    color:black;
+}
+
+.content div:hover {
+  -moz-box-shadow:    1px 1px 10px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 10px 1px #ccc;
+  box-shadow:         1px 1px 10px 1px #ccc;
+}
+
+#issuer {
+  float: right;
+  height: 150px;
+  width:50%;
+  height:auto;
+  margin: auto;
+}
+
+/* Color on issue-nrs */
+#v51 span {
+  color: darkgreen;
+}
+#v50 span {
+  color:crimson;
+}
+#v49 span {
+  color:lightgrey;
+}
+#v48 span {
+  color:red;
+}
+#v47 span {
+  color:darkgrey;
+}
+#v46 span {
+  color:#E760BB;
+}
+#v45 span {
+  color:#F3FC5D;
+}
+#v44 span {
+  color:#EF3A5A;
+}
+#v43 span {
+  color:#8686AF;
+}
+#v42 span {
+  color:red;
+}
+#v41 span {
+  color:darkgrey;
+}
+#v40 span {
+  color:orange;
+}
+#v39 span {
+  color:red;
+}
+#v38 span {
+  color:red;
+}
+#v37 span {
+  color:#E2E039;
+}
+#v36 span {
+  color:#F56B33;
+}
+#v35 span {
+  color:#055EAC;
+}
+#v34 span {
+  color:#87A5BD;
+}
+#v33 span {
+  color:#F19AC3;
+}
+#v32 span {
+  color:#13C3F5;
+}
+#v31 span {
+  color:#FCF200;
+}
+#v30 span {
+  color:#EF3A5A;
+}
+#v29 span {
+  color:#01B1DF;
+}
+#v28 span {
+  color:darkgrey;
+}
+#v27 span {
+  color:#7AA7EB;
+}
+#v26 span {
+  color:lightgrey;
+}
+#v25 span {
+  color:yellow;
+}
+#v24 span {
+  color:#305391;
+}
+#v23 span {
+  color:#F19AC3;
+}
+#v22 span {
+  color:#13C3F5;
+}
+#v21 span {
+  color:#05ACE3;
+}
+#v20 span {
+  color:skyblue;
+}
+#v19 span {
+  color:blue;
+}
+#v18 span {
+  color:yellow;
+}
+#v17 span {
+  color:lightgreen;
+}
+#v16 span {
+  color:#F56B33;
+}
+#v15 span {
+  color:lightblue;
+}
+#v14 span {
+  color:grey;
+}
+#v13 span {
+  color:red;
+}
+#v12 span {
+  color:#0F78A8;
+}
+#v11 span {
+  color:#E89DE6;
+}
+#v10 span {
+  color:lightgrey;
+}
+#v9 span {
+  color:skyblue;
+}
+#v8 span {
+  color:red;
+}
+#v7 span {
+  color:lightgreen;
+}
+#v6 span {
+  color:#F56B33;
+}
+#v5 span {
+  color:#F0D335;
+}
+#v4 span {
+  color:red;
+}
+#v3 span {
+  color:#8B5844;
+}
+#v2 span {
+  color:red;
+}
+#v1 span {
+  color:#00C0ED;
+}
+
+#fake {
+  color:white !important;
+  display:inline-block;
+}
+
+/*end color spans*/
+
+/*footer*/
+
+#copyright {
+  height:100px;
+}
+
+#foot{
+  margin-top:40px;
+  height:100px;
+  width:100%;
+  font-size:14px;
+}
+
+#foot:hover {
+  box-shadow:none !important;
+}
+
+
+/*NAVIGATION OVERLAY*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    padding-top: 0px;
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* white fallback color */
+    overflow-y: scroll; /* Disable vertical scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay .closebtn {
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+    text-decoration:none;
+}
+
+/* Flexbox Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Media Responsive */
+
+
+
+@media all and (max-width: 800px) {
+    .content div {
+        width: 47%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        background: white;
+        border:5px solid white;
+        height:170px;
+
+    .#title {
+        font-size:20px;
+}
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+    .content {
+      flex-direction:column;
+      display:block;
+    }
+
+    .content div {
+        width:98%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background: white;
+        border:3px solid white;
+        height:170px;
+
+    .content active:hover {
+        border:3px solid orange;
+
+    .content div #title {
+        font-size:20px;
+    }
+
+  }

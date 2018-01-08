@@ -1,0 +1,114 @@
+@import "compass/css3";
+
+/*LOAD THEM FONTS Y'ALL*/
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGrotesk.ttf);
+    }
+div {
+    font-family:AktivGrotesk;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBoldItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+      font-family: AktivGrotesk;
+      src: url(fonts/AktivGroteskItalic.ttf);
+      font-weight: 300;
+      font-style: italic;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*--------------------*/
+
+/*FLEX CONTAINER*/
+
+/* Common Styles */
+
+
+.content {
+    margin-top:100px;
+    font-color: black;
+    height: 150px;
+    text-align: left;
+}
+
+.content div {
+    height: 150px;
+    width: 32%;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: #white;
+
+}
+
+
+#title {
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight:800;
+  width:40%;
+}
+
+#pubdate {
+    padding-left:10px;
+    font-size:14px;
+}
+
+
+.content div:hover {
+  -moz-box-shadow:    1px 1px 10px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 10px 1px #ccc;
+  box-shadow:         1px 1px 10px 1px #ccc;
+}
+
+
+
+#issuel {
+  float: left;
+  height: 150px;
+  width:50%;
+  height:auto;
+}
+
+
+#issuer {
+  float: right;
+  height: 150px;
+  width:50%;
+  height:auto;
+}
+
+.v51 {
+}
+.v50 span {
+  color:red;
+}
+.v49 {
+}
+
+/* Flexbox Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

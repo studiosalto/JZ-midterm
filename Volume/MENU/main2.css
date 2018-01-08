@@ -1,0 +1,57 @@
+@import "compass/css3";
+
+/*LOAD THEM FONTS Y'ALL*/
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGrotesk.ttf);
+    }
+div {
+    font-family:AktivGrotesk;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskBoldItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+      font-family: AktivGrotesk;
+      src: url(fonts/AktivGroteskItalic.ttf);
+      font-weight: 300;
+      font-style: italic;
+}
+@font-face {
+    font-family: AktivGrotesk;
+    src: url(fonts/AktivGroteskLightItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*--------------------*/
+
+/*MENU FLEX CONTAINER*/
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top:100px;
+}
+
+.overview {
+  flex-wrap: wrap;
+  display:inline;
+}
